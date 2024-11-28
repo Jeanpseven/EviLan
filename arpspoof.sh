@@ -1,15 +1,7 @@
 #!/bin/bash
 
 # Exibe o banner
-echo "  _____           _  _____           "
-echo " |  __ \         | |/ ____|          "
-echo " | |  | | ___  __| | (___   ___  ___ "
-echo " | |  | |/ _ \/ _' |\___ \ / _ \/ __|"
-echo " | |__| |  __/ (_| |____) |  __/ (__ "
-echo " |_____/ \___|\__,_|_____/ \___|\___|"
-echo "                                     "
-echo "                                     "
-
+cat res/banner
 # Solicita a entrada do usuário para a interface de rede, o alvo e o roteador
 read -p "Digite a interface de rede (exemplo: wlan0, eth0): " iface
 read -p "Digite o IP do alvo (dispositivo que você quer interceptar): " alvo
