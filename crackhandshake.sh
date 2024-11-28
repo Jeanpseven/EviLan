@@ -1,15 +1,7 @@
 #!/bin/bash
 
 # Exibe o banner
-echo "  _____           _  _____           "
-echo " |  __ \         | |/ ____|          "
-echo " | |  | | ___  __| | (___   ___  ___ "
-echo " | |  | |/ _ \/ _' |\___ \ / _ \/ __|"
-echo " | |__| |  __/ (_| |____) |  __/ (__ "
-echo " |_____/ \___|\__,_|_____/ \___|\___|"
-echo "                                     "
-echo "                                     "
-
+cat res/banner
 # Solicita a entrada do usuário para o arquivo .cap e a wordlist
 read -p "Digite o caminho para o arquivo .cap: " capfile
 read -p "Digite o caminho para a wordlist: " wordlist
