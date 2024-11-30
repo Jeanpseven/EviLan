@@ -10,7 +10,7 @@ read -p "Digite o IP do roteador (exemplo:192.168.0.1: " router
 
 # Verifica se o etter.conf existe e descomenta a linha que permite o redirecionamento
 if [ -f /etc/etter.conf ]; then
-    echo "se erros persistirem descomente os redir_comand no /etc/etter.conf"
+    echo "se erros persistirem descomente os redir_comand no /etc/etter.conf,coloque os privs = 0,e edite o dns no /etc/ettercap/etter.dns"
     sed -i 's/#redir_command_on = \"iptables/redir_command_on = \"iptables/g' /usr/local/etc/etter.conf
     sed -i 's/#redir_command_off = \"iptables/redir_command_off = \"iptables/g' /usr/local/etc/etter.conf
     echo "Linhas de redirecionamento descomentadas em /etc/etter.conf"
